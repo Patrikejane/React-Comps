@@ -10,9 +10,7 @@ const Logs = ({ tours, removeTour }) => {
         </div>
         <div className='tours'>
           {tours.map((tour) => {
-
             return <Log key={tour.id} {...tour} removeTour={removeTour} />;
-            
           })}
         </div>
       </section>
