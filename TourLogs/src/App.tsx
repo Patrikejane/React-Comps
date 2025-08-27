@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Spinner from '../component/spinner';
 import Logs from '../component/Logs'
@@ -28,7 +26,7 @@ const App = () => {
   };
 
 
-  const removeTour = (id) => {
+  const removeTour = (id: any) => {
     const newTours = tours.filter((tour) => tour.id !== id);
     setTours(newTours);
   };
